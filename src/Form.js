@@ -41,6 +41,7 @@ const Form = () => {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+		try {
 		await fetch(`https://my-json-server.typicode.com/JustUtahCoders/interview-users-api/users`, {
 			method: 'POST',
 			headers: {
@@ -49,6 +50,9 @@ const Form = () => {
 			body: JSON.stringify(newParticipant)
 		});
 		return clearForm();
+		} catch (error) {
+			alert('Something went wrong');
+		}
 	};
 
 	const checkBirthDate = (date) => {
