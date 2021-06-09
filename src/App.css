@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+	font-size: 75%;
+}
+
+body {
+	background-color: #fff;
+	text-align: center;
+}
+
+.header {
+	color: #444;
+	font-family: "Karla", sans-serif;
+}
+
+.form {
+	display: grid;
+	grid-template-columns: 1fr;
+	border: solid 2px #aaa;
+	width: 50%;
+	margin: 10rem auto;
+	border-radius: 5px;
+	background-color: #fdfbfb;
+}
+
+.inputs {
+	display: flex;
+	flex-flow: column wrap;
+	width: 30%;
+	margin: 0 auto;
+}
+
+.label {
+	text-align: left;
+	margin-bottom: -0.5rem;
+	font-size: 1.5rem;
+	font-family: "Roboto", sans-serif;
+}
+
+.text-input {
+	width: 100%;
+	margin: 1rem auto;
+}
+
+.buttons {
+	margin-bottom: ;
+}
+
+.btn {
+	width: 8rem;
+	margin: 1.5rem 1rem;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.btn-submit {
+	background-color: #72daec;
+	color: #333;
+	font-weight: 800;
+}
+
+.btn-submit:disabled {
+	opacity: 0.6;
+	cursor: normal;
+}
+
+.btn-submit:enabled {
+	cursor: pointer;
+}
+
+.btn-clear {
+	background-color: #e77763;
+	color: #333;
+	outline: none;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.agree-box {
+	display: flex;
+	justify-content: center;
+	font-size: 1.2rem;
+}
+
+p {
+	font-family: "Karla", sans-serif;
+}
+
+.message {
+	font-size: 1.25rem;
+	margin-top: -3rem;
+}
+
+.prompt {
+	margin-top: -2rem;
+}
+
+.agree-box input {
+	margin: 1.5rem 1rem 0 0;
+}
